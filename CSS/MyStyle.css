@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Titillium+Web:wght@300&display=swap');
+/* font-family: 'Gabarito', sans-serif; */
+/* font-family: 'Titillium Web', sans-serif; */
+
+header{
+    font-family: 'Gabarito', sans-serif;
+    background-color:#8adbca;
+}
+nav{
+    font-family: 'Gabarito', sans-serif;
+    background-color: #1E93EB;
+}
+nav a{
+    color: #ffffff;
+}
+nav a:hover{
+    color: #dfdfdf;
+}
+section{
+    font-family: 'Titillium Web', sans-serif;
+    /* color: #ffffff; */
+}
+.colour1{
+    background-color: #eca167;
+}
+.colour2{
+    background-color:#eca167;
+}
