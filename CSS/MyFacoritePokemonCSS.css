@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+header {
+    text-shadow: 2px 2px 4px #000000;
+    background-image: url(../images/Umbreon-unite.png);
+    background-repeat: no-repeat;
+    height: 512px;
+    padding-top: 200px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+body {
+    /* background */
+    /* background-color: #2c2c2c; */
+    background-image: url(../images/back.png);
+    color: #ebebeb;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border: 0;
+    height: 32px;
+    background-image: url(../images/div.png);
+    background-repeat: repeat-x;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    /* nav fun */
+    float: left;
+    padding: 1%;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2c2c2c;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:visited {
+    color: #ffffff;
+}
+
+nav li:hover {
+    background-color: #303030;
+}
+
+.stickyNav {
+    /* stick it */
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+/* nav img{
+    float: left;
+} */
+
+
+/*.container {
+    position: relative;
+    color: white;
+}
+
+ .top-left {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+} */
+
+section {
+    width: 75vw;
+    margin: 0 auto;
+    padding: 3% 2%;
+}
+
+a {
+    text-decoration: underline;
+    color: #b8b8b8;
+}
+
+a:visited {
+    color: #00d9ff;
+}
+
+a:hover {
+    color: #ffffff;
+}
