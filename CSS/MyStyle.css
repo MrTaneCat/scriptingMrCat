@@ -26,3 +26,13 @@ section{
 .colour2{
     background-color:#eca167;
 }
+footer{
+    background-color: #333333;
+    text-decoration: none;
+}
+footer a{
+    color: #ffffff;
+}
+footer a:hover{
+    color: #cccccc;
+}
