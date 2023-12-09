@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- my CSS -->
+    <link rel="stylesheet" href="CSS/myCSS.css">
+</head>
+
+<body id="bodyBG">
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Make a story</h3>
+                    <p>MadLib</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <!-- form -->
+        <form id="story" action="javascript:pageWrite();">
+            <div class="container py-5" id="form">
+                <div class="row py-3">
+                    <div class="col-sm-12">
+                        <!-- intro -->
+                        <p>fill in the blacks to make your own story</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-sm-6">
+                        <!-- gender -->
+                        <p>who is your character</p>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="gender" value="he">He
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="gender" value="she">She
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="gender" value="they">they
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- name -->
+                        <p>what is their name</p>
+                        <div class="form-group">
+                            <label for="Character">Name:</label>
+                            <input type="text" class="form-control" id="Character">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- form col 1 -->
+                        <div class="form-group">
+                            <!-- sweat sound -->
+                            <label for="sound">a sweet sound:</label>
+                            <input type="text" class="form-control" id="sound">
+                        </div>
+                        <div class="form-group">
+                            <!-- woman name -->
+                            <label for="mom">a woman's name:</label>
+                            <input type="text" class="form-control" id="mom">
+                        </div>
+                        <div class="form-group">
+                            <!-- breakfast name -->
+                            <label for="breakfast">a breakfast food:</label>
+                            <input type="text" class="form-control" id="breakfast">
+                        </div>
+                        <div class="form-group">
+                            <!-- form of transportation -->
+                            <label for="transportation">form of transportation:</label>
+                            <input type="text" class="form-control" id="transportation">
+                        </div>
+                        <div class="form-group">
+                            <!-- friend name -->
+                            <label for="friend">friend name (someone you character would know):</label>
+                            <input type="text" class="form-control" id="friend">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- form col 2 -->
+                        <div class="form-group">
+                            <!-- school subject -->
+                            <label for="subject">a school subject:</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <!-- unfortunate event -->
+                            <label for="unfortunate">unfortunate event (can be multiple words):</label>
+                            <input type="text" class="form-control" id="unfortunate">
+                        </div>
+                        <div class="form-group">
+                            <!-- minor inconvenience -->
+                            <label for="inconvenience">minor inconvenience (can be multiple words):</label>
+                            <input type="text" class="form-control" id="inconvenience">
+                        </div>
+                        <div class="form-group">
+                            <!-- desert. -->
+                            <label for="desert">a dessert:</label>
+                            <input type="text" class="form-control" id="desert">
+                        </div>
+                        <!-- submit -->
+                        <br>
+                        <button type="submit" class="btn btn-block btn-secondary">Submit</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <!-- form end -->
+        </form>
+    </section>
+
+    <section>
+        <!-- story -->
+        <div class="container" id="storyPG">
+            <div class="row py-2">
+                <!-- waking up I the morning -->
+                <div id="storyOut1" class="col-sm-8">
+                    <p>story will go here</p>
+                </div>
+                <div id="pic1" class="col-sm-4">
+
+                </div>
+            </div>
+            <div class="row py-2">
+                <!-- arriving at school -->
+                <div id="storyOut2" class="col-sm-8">
+                    <p>
+
+                    </p>
+                </div>
+                <div id="pic2" class="col-sm-4">
+
+                </div>
+            </div>
+            <div class="row py-2">
+                <!-- lunch -->
+                <div id="storyOut3" class="col-sm-8">
+                    <p>
+
+                    </p>
+                </div>
+                <div id="pic3" class="col-sm-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <!-- footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <p>made by Tane W</p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <p>2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="js/Story.js"></script>
+</body>
+
+</html>
+<!--  
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            
+        </div>
+    </div>
+</div>
+-->
